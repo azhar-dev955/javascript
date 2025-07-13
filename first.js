@@ -42,13 +42,13 @@
 //     console.log("odd numbwer");
 // }
 
-//ternary operstor
+// ternary operstor
 // let age=15;
 // let result=age>18?"adult":"not adult";
 // console.log(result);
 
 
-//problem!!!
+// problem!!!
 // let number= prompt("enter a number");
 // if(number%5===0){
 //     console.log("number is ok")
@@ -57,7 +57,7 @@
 // }
 
 
-//student grade system numerical
+// student grade system numerical
 
 // let no =prompt("enter you score");
 // if(no >=80 & no <=100){
@@ -71,13 +71,13 @@
 // };
 
 
-//Loops
+// Loops
 
 // for(i=1; i<=5;i++){
 //     console.log("hello azhar ");
 // }
 
-//Calculate sum of 1 to 5
+// Calculate sum of 1 to 5
 
 // let sum=0;
 // for(i=1;i<=5;i++){
@@ -85,7 +85,7 @@
 // }
 // console.log("sume value = ",sum);
 
-//while loop
+// while loop
 // let i=1;
 // while(i<=5){
 //     console.log("i = ",i)
@@ -102,7 +102,7 @@
 // }while(i<=5);
 
 
-//for-of loop
+// for-of loop
 // let string ="javascript"
 // let size=0;
 // for(let i of string){
@@ -112,7 +112,7 @@
 // }
 //    console.log("size =",size)
 
-//for-in loop
+// for-in loop
 
 // let student={
 //     name:"azhar",
@@ -125,7 +125,7 @@
 // }
 
 
-//print all the even numbers 0-100
+// print all the even numbers 0-100
 
 // for(let i=0;i<=100;i++){
 //     if(i%2===0){
@@ -134,7 +134,7 @@
 // }
 
 
-//gussing the correct number game
+// gussing the correct number game
 // let number =25;
 // let new_number=prompt("Guess the number : "); 
 
@@ -143,7 +143,7 @@
 // }
 // console.log("congratulation you have guess correct");
 
-//STRINGS IN JAVASCRIPT
+// STRINGS IN JAVASCRIPT
 // let str="hello world";
 // str.length;
 // //console.log(str[3])
@@ -166,7 +166,7 @@
 //     console.log("values are :",i)
 // }
 
-//Find average of students
+// Find average of students
 
 // let marks = [85,97,44,37,76,60];
 // let sum =0;
@@ -184,7 +184,7 @@
 // console.log(items);
 
 
-//pUSH AND POP IN ARRAY
+// pUSH AND POP IN ARRAY
 
 // let arr = [1,2,3,4,5,6];
 // arr.push(9,9,9);
@@ -201,7 +201,7 @@
 // }
 // myFunc(2,2);
 
-//Arrow functions
+// Arrow functions
 
 // const mulFunc = (a,b) =>{
 //     console.log(a*b)
@@ -209,7 +209,7 @@
 // mulFunc(5,5);
 
 
-//print vovels in a string using function
+// print vovels in a string using function
 
 // // function countvowels(str){
 // //     for(let i=0;i<str.length;i++){
@@ -219,13 +219,49 @@
 // // }
 // countvowels("hello");
 
-function countvowels(str){
-    let count = 0;
-    for(const char of str){
-        if(char === "a" || char=== "e" || char === "i" || char === "o" || char ==="u"){
-            count++;
-        }
-    }
-    console.log(count);
-}
-countvowels("hellooo");
+// function countvowels(str){
+//     let count = 0;
+//     for(const char of str){
+//         if(char === "a" || char=== "e" || char === "i" || char === "o" || char ==="u"){
+//             count++;
+//         }
+//     }
+//     console.log(count);
+// }
+// countvowels("hellooo");
+
+
+
+
+// HTML CSS JAVASCRIPT COMBINE
+
+// alert("CLICK TO CONTINUE")
+
+// let header = document.getElementById("heading");
+// console.log(header);
+
+// let button = document.getElementsByClassName("btn");
+// console.dir(button);
+// console.log(button);
+
+// let para = document.querySelector("p1"); //access single tag
+// console.dir(para);
+
+// let paragraphs = document.querySelectorAll("p"); //access all tags
+// console.dir(paragraphs);
+
+
+//append text with h1 tag using js
+
+// let h2 = document.querySelector("h2");
+// console.dir(h2.innerText)
+// h2.innerText = h2.innerText + " from apna college";
+
+
+//create 3 divs with same class and change unqui value in each div
+
+let divs = document.querySelectorAll(".box");
+divs[0].innerText = "hello azhar";
+divs[1].innerText = 'how are yiu';
+divs[2].innerText  = 'wellcome to JS';
+divs[1].innerHTML = 'hhahahhah'
