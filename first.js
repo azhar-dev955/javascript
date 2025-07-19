@@ -260,8 +260,53 @@
 
 //create 3 divs with same class and change unqui value in each div
 
-let divs = document.querySelectorAll(".box");
-divs[0].innerText = "hello azhar";
-divs[1].innerText = 'how are yiu';
-divs[2].innerText  = 'wellcome to JS';
-divs[1].innerHTML = 'hhahahhah'
+// let divs = document.querySelectorAll(".box");
+// divs[0].innerText = "hello azhar";
+// divs[1].innerText = 'how are yiu';
+// divs[2].innerText  = 'wellcome to JS';
+// divs[1].innerHTML = 'hhahahhah'
+
+//Event handling!!!!!
+
+//  let btn1=document.querySelector("#btn-1");
+// // let box=document.querySelector('.box');
+
+// btn1.onclick = () =>{
+//     console.log("button was clicked");
+// }
+
+// // box.ondblclick = () =>{
+// //     console.log('you are in a box!!!')
+// // }
+
+// //event object (e)!!!
+
+// // btn1.onclick = (e) =>{
+// //     console.log(e);
+// // }
+
+// //event handling with eventlistener
+
+// btn1.addEventListener("click",() =>{
+//     console.log("clicked by event listner")
+// })
+
+// btn1.addEventListener("click",(e) =>{
+//     console.log("clicked by event listner 2")
+//     console.log(e)
+// })
+
+
+//create a toggle btn that on click it chage the color
+ let mode = document.querySelector('#mode');
+ let curntmode = "ligh";
+ mode.addEventListener("click", () =>{
+    if(curntmode === "ligh"){
+        curntmode = "dark";
+        document.querySelector('body').style.backgroundColor="black";
+    }else{
+        curntmode= "ligh";
+        document.querySelector('body').style.backgroundColor = "white";
+    }
+    console.log(curntmode);
+ })
